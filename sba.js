@@ -1,4 +1,4 @@
-// Example data below generated ny Ai to make the process little faster.
+// Example data
 let courseInfo = {
     id: 1,
     name: "Math 101"
@@ -58,7 +58,7 @@ function getLearnerData(courseInfo, assignmentGroups, learnerSubmissions) {
         // Validate input data
         validateData(courseInfo, assignmentGroups);
 
-        // Create an array to store the results
+        // Created an array to store the results
         let results = [];
 
         // Loop through each learner submission
@@ -72,7 +72,7 @@ function getLearnerData(courseInfo, assignmentGroups, learnerSubmissions) {
             // Object to store individual assignment percentages
             let assignmentScores = {};
 
-            // Loop through assignment groups
+            // Loop through assignment grouped
             for (let j = 0; j < assignmentGroups.length; j++) {
                 let group = assignmentGroups[j];
 
@@ -178,6 +178,6 @@ function calculateScore(submission, assignment) {
 }
 
 
-// Run the function and log the results
+// Runing the function and log the results
 let results = getLearnerData(courseInfo, assignmentGroups, learnerSubmissions);
 console.log(results);
